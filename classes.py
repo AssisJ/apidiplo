@@ -1,6 +1,6 @@
 from pydantic import BaseModel as PydanticBaseModel
 from pydantic import Field, ValidationError
-from typing import Literal
+from typing_extensions import Literal
 import joblib
 import pandas as pd
 import datetime as dt
