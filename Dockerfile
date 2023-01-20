@@ -4,4 +4,4 @@ COPY requirements.txt /
 RUN pip install -r requirements.txt
 COPY . ./
 
-ENTRYPOINT uvicorn app.main:app --host 0.0.0.0 --port $PORT
+ENTRYPOINT uvicorn main:app --host 0.0.0.0 --port $PORT
